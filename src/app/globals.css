@@ -11,14 +11,8 @@
   --color-primary-700: #6d28d9;
   --color-primary-800: #5b21b6;
   --color-primary-900: #4c1d95;
-
-  --color-surface: rgba(255, 255, 255, 0.55);
-  --color-surface-elevated: rgba(255, 255, 255, 0.72);
-  --color-border-subtle: rgba(0, 0, 0, 0.06);
-  --color-border-hover: rgba(0, 0, 0, 0.1);
 }
 
-/* Grain texture overlay for depth */
 .grain::before {
   content: "";
   position: fixed;
@@ -31,7 +25,6 @@
   background-size: 180px;
 }
 
-/* Checkerboard for transparency preview */
 .checkerboard {
   background-image:
     linear-gradient(45deg, #f0f0f0 25%, transparent 25%),
@@ -46,7 +39,6 @@
     -7px 0px;
 }
 
-/* Spinner keyframe */
 @keyframes spin-slow {
   to { transform: rotate(360deg); }
 }
@@ -55,7 +47,6 @@
   animation: spin-slow 1.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
-/* Smooth fade-in for sections */
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -73,20 +64,7 @@
 
 .fade-up-delay-1 { animation-delay: 0.1s; opacity: 0; }
 .fade-up-delay-2 { animation-delay: 0.2s; opacity: 0; }
-.fade-up-delay-3 { animation-delay: 0.3s; opacity: 0; }
 
-/* Subtle glow for primary buttons */
-@keyframes glow-pulse {
-  0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.15), 0 1px 3px rgba(0, 0, 0, 0.08); }
-  50% { box-shadow: 0 0 32px rgba(139, 92, 246, 0.25), 0 1px 3px rgba(0, 0, 0, 0.08); }
-}
-
-/* Upload border animation */
-@keyframes border-rotate {
-  to { --border-angle: 360deg; }
-}
-
-/* Progress bar shimmer */
 @keyframes progress-shimmer {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }

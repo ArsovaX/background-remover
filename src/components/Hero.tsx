@@ -2,7 +2,6 @@ export default function Hero() {
   return (
     <section className="pt-36 pb-10 px-6 text-center fade-up">
       <div className="max-w-2xl mx-auto">
-        {/* Pill badge */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary-50/80 border border-primary-200/60 text-primary-700 text-xs font-medium tracking-wide mb-8">
           <span className="relative flex h-1.5 w-1.5">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75" />
@@ -20,7 +19,7 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p className="text-base sm:text-lg text-gray-400 max-w-lg mx-auto leading-relaxed font-normal">
+        <p className="text-base sm:text-lg text-gray-400 max-w-lg mx-auto leading-relaxed">
           Upload a photo. AI removes the background. Download a transparent PNG.
           <br className="hidden sm:block" />
           No signup, no watermarks, completely free.
