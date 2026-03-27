@@ -83,6 +83,10 @@ export default function BackgroundRemover() {
     try {
       const { removeBackground } = await import("@imgly/background-removal");
       const blob = await removeBackground(fileRef.current, {
+        model: "isnet",
+        device: "gpu",
+        rescale: true,
+        output: { format: "image/png", quality: 1 },
         progress: (key: string, current: number, total: number) => {
           if (total > 0) setProgress(Math.round((current / total) * 100));
         },
